@@ -26,7 +26,8 @@ Some parts of codes in this repo are adapted from the following amazing works. W
 - [StarDist](https://github.com/stardist/stardist): incoporated with QuPath for nuclei segmentation.
 - [QuPath](https://github.com/qupath/qupath/releases/tag/v0.6.0-rc3): adapted for nuclear feature extraction.
 - [Fast_WSI_color_norm](https://github.com/MEDAL-IITB/Fast_WSI_Color_Norm): used for WSI color normalization.
-- 
+
+
 ## 📝 Citation
 
 If you find this work helps your research, please consider citing our paper:

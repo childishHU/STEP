@@ -16,6 +16,13 @@
     </em>
 </p>
 
+📚 Recent updates:
+- the tutorial and related data are coming soon!
+- 24/11/26: codes are live
+- 24/11/24: paper are live
+- 24/11/22: release STEP 
+
+*On updating. Stay tuned.*
 ## Running the Code
 
 ## Acknowledgements

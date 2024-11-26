@@ -1,4 +1,4 @@
-# 🧬 STEP: Deciphering Spatial Atlas at Single-Cell Level with Whole-Transcriptome Coverage
+# STEP: Deciphering Spatial Atlas at Single-Cell Level with Whole-Transcriptome Coverage
 
 [[Preprint]](https://www.biorxiv.org/content/10.1101/2024.11.22.624797v1)
 
@@ -16,7 +16,7 @@
     </em>
 </p>
 
-## 👩‍💻 Running the Code
+## Running the Code
 
 ## Acknowledgements
 Some parts of codes in this repo are adapted from the following amazing works. We thank the authors and developers for their selfless contributions. 
@@ -28,7 +28,7 @@ Some parts of codes in this repo are adapted from the following amazing works. W
 - [Fast_WSI_color_norm](https://github.com/MEDAL-IITB/Fast_WSI_Color_Norm): used for WSI color normalization.
 
 
-## 📝 Citation
+## Citation
 
 If you find this work helps your research, please consider citing our paper:
 ```txt

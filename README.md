@@ -11,9 +11,7 @@
 <!-- Insert a pipeline of your algorithm here if got one -->
 <p align="center">
     <img src="./figs/Overview_final.png"/ width="1100"> <br />
-    <em> 
-    Overview of STEP.
-    </em>
+    Fig.1: Overview of STEP. STEP is a multi-modal integration architecture tailored for whole-transcriptome expression at the single-cell level. a Data collection and pre-processing. b Main workflow of STEP, consisting of three key stages: Cell Identification, Spatial Diffusion, and Gene Enhancement. c Downstream analyses enabled by STEP, including Cross-Sample Transfer, Cell Subtyping, and Cell-Cell Interactions.
 </p>
 
 📚 Recent updates:

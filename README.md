@@ -33,6 +33,8 @@ $ conda create -n STEP python=3.9
 $ conda activate STEP
 $ pip install -r requirements.txt
 ```
+### Nucleus Segmentation
+
 ## Acknowledgements
 Some parts of codes in this repo are adapted from the following amazing works. We thank the authors and developers for their selfless contributions. 
 

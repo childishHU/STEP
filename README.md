@@ -50,7 +50,7 @@ Inputs
 Outputs
 
 - Preprocessed ST data for Nucleus Segmentation: sp_adata_ef.h5ad(**features** that contains morphological features of segmented cells will be added to .uns)
-
+### Identification & Diffusion
 
 ## Acknowledgements
 Some parts of codes in this repo are adapted from the following amazing works. We thank the authors and developers for their selfless contributions. 
@@ -59,6 +59,7 @@ Some parts of codes in this repo are adapted from the following amazing works. W
 - [SpatialScope](https://github.com/YangLabHKUST/SpatialScope): our STEP fully exploits the nuclear features.
 - [StarDist](https://github.com/stardist/stardist): incoporated with QuPath for nuclei segmentation.
 - [QuPath](https://github.com/qupath/qupath/releases/tag/v0.6.0-rc3): adapted for nuclear feature extraction.
+- [CLAM](https://github.com/mahmoodlab/CLAM): used for extracting tissue foreground.
 - [Fast_WSI_color_norm](https://github.com/MEDAL-IITB/Fast_WSI_Color_Norm): used for WSI color normalization.
 
 

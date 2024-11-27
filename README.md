@@ -34,6 +34,23 @@ $ conda activate STEP
 $ pip install -r requirements.txt
 ```
 ### Nucleus Segmentation
+```
+python  Extract_Features.py --tissue cortex --out_dir ./output --ST_Data ./data/Visium_MouseBrain_Cortex_section2.h5ad --Img_Data ./data/V1_Mouse_Brain_Sagittal_Anterior_Section_2_image.tif  --CLAM_Data ./data/V1_Mouse_Brain_Sagittal_Anterior_Section_2_image.h5 --Json_Data ./data/V1_Mouse_Brain_Sagittal_Anterior_Section_2_image.geojson --part True
+```
+Inputs
+
+- --out_dir: output directory
+- --tissue: output sub-directory
+- --ST_Data: ST data file path
+- --Img_Data: H&E stained image data file path
+- --CLAM_Data: Foreground region extracted by CLAM file path
+- --Json_Data: StarDist segmentation result file path
+- --part: Does it provide RoI (Region of Interest)
+
+Outputs
+
+- Preprocessed ST data for Nucleus Segmentation: sp_adata_ef.h5ad(**features** that contains morphological features of segmented cells will be added to .uns)
+
 
 ## Acknowledgements
 Some parts of codes in this repo are adapted from the following amazing works. We thank the authors and developers for their selfless contributions. 

@@ -16,7 +16,7 @@
 
 ---
 
-📚 Recent updates:
+Recent updates:
 - the tutorial and related data are coming soon!
 - 24/11/26: codes are live
 - 24/11/24: paper is live
@@ -25,7 +25,14 @@
 
 *On updating. Stay tuned.*
 ## Running the Code
-
+### Installation
+``` shell
+$ git clone https://github.com/childishHU/STEP.git
+$ cd STEP
+$ conda create -n STEP python=3.9
+$ conda activate STEP
+$ pip install -r requirements.txt
+```
 ## Acknowledgements
 Some parts of codes in this repo are adapted from the following amazing works. We thank the authors and developers for their selfless contributions. 
 

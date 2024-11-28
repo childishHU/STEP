@@ -29,7 +29,7 @@ Recent updates:
 ``` shell
 $ git clone https://github.com/childishHU/STEP.git
 $ cd STEP
-$ conda create -n STEP python=3.9
+$ conda create -n STEP python=3.10
 $ conda activate STEP
 $ pip install -r requirements.txt
 ```

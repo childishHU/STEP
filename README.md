@@ -49,7 +49,7 @@ Inputs
 
 Outputs
 
-- Preprocessed ST data for Nucleus Segmentation: sp_adata_ef.h5ad(**features** that contains morphological features of segmented cells will be added to .uns)
+- Preprocessed ST data for Nucleus Segmentation: sp_adata_ef.h5ad (**features** that contains morphological features of segmented cells will be added to .uns)
 ### Identification & Diffusion
 Coming Soon
 ### Gene enhancement

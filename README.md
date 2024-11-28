@@ -35,7 +35,7 @@ $ conda create -n STEP python=3.10
 $ conda activate STEP
 $ pip install -r requirements.txt
 ```
-### Nucleus Segmentation
+### Nuclei Segmentation
 ```
 python  Extract_Features.py --tissue cortex --out_dir ./output --ST_Data ./data/Visium_MouseBrain_Cortex_section2.h5ad --Img_Data ./data/V1_Mouse_Brain_Sagittal_Anterior_Section_2_image.tif  --CLAM_Data ./data/V1_Mouse_Brain_Sagittal_Anterior_Section_2_image.h5 --Json_Data ./data/V1_Mouse_Brain_Sagittal_Anterior_Section_2_image.geojson --part True
 ```

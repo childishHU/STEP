@@ -26,6 +26,8 @@ Recent updates:
 *On updating. Stay tuned.*
 ## Running the Code
 ### Installation
+Assuming that you have installed PyTorch and TorchVision, if not, please follow the [officiall instruction](https://pytorch.org/) to install them firstly. 
+Intall the dependencies using cmd:
 ``` shell
 $ git clone https://github.com/childishHU/STEP.git
 $ cd STEP

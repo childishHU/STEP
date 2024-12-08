@@ -8,7 +8,7 @@ from .layer import LPAconv
 class GAT_LPA(nn.Module):
     def __init__(self, in_feature, hidden, out_feature, dropout, num_edges, lpaiters, gat_heads, gatnum):
         super(GAT_LPA, self).__init__()
-        self.edge_weight = nn.Parameter(torch.ones(num_edges))
+        #self.edge_weight = nn.Parameter(torch.ones(num_edges))
         
         gc = nn.ModuleList()
         gc.append(GATConv(in_feature, hidden, heads=gat_heads, concat=True))
@@ -17,19 +17,19 @@ class GAT_LPA(nn.Module):
         gc.append(GATConv(hidden * gat_heads, out_feature, heads=1, concat=False))
         self.gc = gc
         
-        self.lpa = LPAconv(lpaiters)
+        #self.lpa = LPAconv(lpaiters)
         self.dropout_rate = dropout
 
     def forward(self, x, edge_index, y=None, mask=None):
         for i in range(len(self.gc)-1):
-            x = self.gc[i](x, edge_index,self.edge_weight)
+            x = self.gc[i](x, edge_index)
             x = F.relu(x)
             x = F.dropout(x, self.dropout_rate, training=self.training)
-        x = self.gc[-1](x, edge_index,self.edge_weight)
-        y_hat = 0
-        if self.training:
-            y_hat = self.lpa(y, edge_index, mask, self.edge_weight)
-        return x, y_hat
+        x = self.gc[-1](x, edge_index)
+        # y_hat = 0
+        # if self.training:
+        #     y_hat = self.lpa(y, edge_index, mask, self.edge_weight)
+        return x
 
     
 class MLP(nn.Module):

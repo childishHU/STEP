@@ -15,7 +15,7 @@ parser.add_argument('--hs_ST', type=bool, help='whether it is an image-based dat
 parser.add_argument('--UMI_min_sigma', type=int, help='WarmStart parameter', default=300)
 parser.add_argument('--n_neighbo', type=int, help='spatial prior parameter, the range of neighbor cells', default=10)
 parser.add_argument('--nu', type=float, help='spatial prior parameter, higher nu means stronger spatial prior', default=10)
-parser.add_argument('--model', type=str, help='GAT or Likelihood for Spatial Diffusion', default='GAT_LPA')
+parser.add_argument('--model', type=str, help='GAT or Likelihood for Spatial Diffusion', default='GAT')
 parser.add_argument('--searchNU', type=int, help='k in KNN in Gene Enhancement', default='50')
 args = parser.parse_args()  
 

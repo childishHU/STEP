@@ -90,10 +90,8 @@ def train_GAT_LPA(epochs, features, label2ct, labels, nclass, cell_locations, id
         loss = 0.0
         model.train()
         optimizer.zero_grad()
-        output, y_hat = model(features, adj, labels_for_lpa, idx_train)
-        loss_gcn = crition(output[idx_train], labels[idx_train])
-        loss_lpa = crition(y_hat[idx_train], labels[idx_train])
-        loss_train = loss_gcn + parameters['Lambda'] * loss_lpa
+        output = model(features, adj)
+        loss_train = crition(output[idx_train], labels[idx_train])
         loss += loss_train.item()
         loss_train.backward() 
         optimizer.step()
@@ -103,7 +101,7 @@ def train_GAT_LPA(epochs, features, label2ct, labels, nclass, cell_locations, id
     
     with torch.no_grad():
         model.eval()
-        output, __ = model(features, adj, labels_for_lpa, idx_train)
+        output = model(features, adj)
         print('accuracy:',accuracy(output[idx_train], labels[idx_train]))
         # row, col, _ = adj.coo()
         # adj_index = torch.stack([row, col], dim=0)

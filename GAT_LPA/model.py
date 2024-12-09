@@ -19,16 +19,13 @@ class GAT_LPA(nn.Module):
         self.lpa = LPAconv(lpaiters)
         self.dropout_rate = dropout
 
-    def forward(self, x, edge_index, y=None, mask=None):
+    def forward(self, x, edge_index):
         for i in range(len(self.gc)-1):
             x = self.gc[i](x, edge_index,self.edge_weight)
             x = F.relu(x)
             x = F.dropout(x, self.dropout_rate, training=self.training)
         x = self.gc[-1](x, edge_index,self.edge_weight)
-        y_hat = 0
-        if self.training:
-            y_hat = self.lpa(y, edge_index, mask, self.edge_weight)
-        return x, y_hat
+        return x
 
     
 class MLP(nn.Module):

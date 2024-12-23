@@ -36,12 +36,12 @@ $ conda activate STEP
 $ pip install -r requirements.txt
 ```
 ### Nuclei Segmentation
-#### [StarDist](https://github.com/stardist/stardist):Annotating with QuPath (2D) 
+#### [StarDist](https://github.com/stardist/stardist): Annotating with QuPath (2D) 
 1. Install [QuPath](https://qupath.github.io/)
 2. Create a new project (`File -> Project...-> Create project`) and add your raw images
 3. Run `Segmentation/nucleifeatures.groovy` to annotate nuclei/objects
 4. Export the annotations (`File -> Export objects as GeoJSON`)
-#### [CLAM](https://github.com/mahmoodlab/CLAM):Basic, Fully Automated Run
+#### [CLAM](https://github.com/mahmoodlab/CLAM): Basic, Fully Automated Run
 ```
 python create_patches_fp.py --source DATA_DIRECTORY --save_dir RESULTS_DIRECTORY --patch_size 256 --seg --patch --stitch 
 ```
